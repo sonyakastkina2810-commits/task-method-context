@@ -21,6 +21,7 @@ describe('Контекст выполнения', () => {
             expect(onSpy.mock.calls[0]).toStrictEqual(offSpy.mock.calls[0]);
         });
 
+
         it('При подписке передаётся корректный обработчик', () => {
             obj.subscribe();
 
@@ -35,6 +36,7 @@ describe('Контекст выполнения', () => {
             expect(obj.count).toBe(2);
         });
     });
+
 
     describe('Прокидывание аргументов', () => {
         it('first вызывает second с развёрнутыми параметрами', () => {
